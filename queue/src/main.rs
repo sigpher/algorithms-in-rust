@@ -1,8 +1,9 @@
-use queue::quque::Queue;
+use queue::{hot_potato::hot_potato, quque::Queue};
 
 fn main() {
     basic();
     iter();
+    potato();
 }
 
 fn basic() {
@@ -46,4 +47,10 @@ fn iter() {
     let sum2 = q.iter().sum::<i32>();
     println!("{sum1} + {addend} = {sum2}");
     println!("sum = {}", q.into_iter().sum::<i32>());
+}
+
+fn potato() {
+    let names = vec!["Shieber", "Tom", "Kew", "Lisa", "Marry", "Bob"];
+    let rem = hot_potato(names, 8);
+    println!("The left person is {rem}");
 }
