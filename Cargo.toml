@@ -3,4 +3,5 @@ members = [
   "stack",
   "queue",
   "deque",
+  "linkedlist",
 ]
