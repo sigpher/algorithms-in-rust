@@ -11,6 +11,10 @@ name = "linkedlist"
 version = "0.1.0"
 
 [[package]]
+name = "lvec"
+version = "0.1.0"
+
+[[package]]
 name = "queue"
 version = "0.1.0"
 

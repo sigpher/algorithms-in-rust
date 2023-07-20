@@ -72,5 +72,5 @@ fn linkedlist_stack() {
 
     println!("top {:?}, size {}", s.peek().unwrap(), s.len());
     println!("pop {:?}, size {}", s.pop().unwrap(), s.len());
-    println!("is_empty: {}, stack: {:?}", s.is_empty(), s);
+    println!("is_empty: {}, stack: {:#?}", s.is_empty(), s);
 }

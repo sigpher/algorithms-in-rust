@@ -4,4 +4,5 @@ members = [
   "queue",
   "deque",
   "linkedlist",
+  "lvec",
 ]
