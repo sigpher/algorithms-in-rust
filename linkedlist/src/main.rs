@@ -1,10 +1,11 @@
-use linkedlist::linkedlist::List;
+use linkedlist::{linkedlist::linkedlist::List, liststack::Stack};
 
 fn main() {
     basic();
     into_iter_test();
     iter_test();
     iter_mut_test();
+    linkedlist_stack();
 }
 
 fn basic() {
@@ -61,4 +62,15 @@ fn iter_mut_test() {
     assert_eq!(iter.next(), Some(&mut 1));
     assert_eq!(iter.next(), None);
     println!("iter_mut test Ok!");
+}
+
+fn linkedlist_stack() {
+    let mut s = Stack::new();
+    s.push(1);
+    s.push(2);
+    s.push(4);
+
+    println!("top {:?}, size {}", s.peek().unwrap(), s.len());
+    println!("pop {:?}, size {}", s.pop().unwrap(), s.len());
+    println!("is_empty: {}, stack: {:?}", s.is_empty(), s);
 }

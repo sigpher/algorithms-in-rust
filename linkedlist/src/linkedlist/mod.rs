@@ -1,3 +1,2 @@
 pub mod linkedlist;
-
-pub use linkedlist::*;
+pub mod liststack;

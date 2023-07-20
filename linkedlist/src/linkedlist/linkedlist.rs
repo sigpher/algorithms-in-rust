@@ -26,24 +26,6 @@ impl<T> List<T> {
         self.size == 0
     }
 
-    // pub fn push(&mut self, elem: T) {
-    //     let node = Box::new(Node {
-    //         elem,
-    //         next: self.head.take(),
-    //     });
-    //
-    //     self.head = Some(node);
-    //     self.size += 1;
-    // }
-    //
-    // pub fn pop(&mut self) -> Option<T> {
-    //     self.head.take().map(|node| {
-    //         self.head = node.next;
-    //         self.size -= 1;
-    //         node.elem
-    //     })
-    // }
-
     pub fn push(&mut self, elem: T) {
         let node = Some(Box::new(Node {
             elem,
@@ -67,6 +49,7 @@ impl<T> List<T> {
     }
 
     pub fn peek_mut(&mut self) -> Option<&mut T> {
+        // self.head.as_deref_mut().map(|node| &mut node.elem)
         self.head.as_mut().map(|node| &mut node.elem)
     }
 
