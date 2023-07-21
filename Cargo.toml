@@ -5,4 +5,5 @@ members = [
   "deque",
   "linkedlist",
   "lvec",
+  "recursion",
 ]

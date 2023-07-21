@@ -19,5 +19,9 @@ name = "queue"
 version = "0.1.0"
 
 [[package]]
+name = "recursion"
+version = "0.1.0"
+
+[[package]]
 name = "stack"
 version = "0.1.0"
