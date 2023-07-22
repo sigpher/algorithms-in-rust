@@ -43,3 +43,19 @@ pub fn hanoi(height: u32, src_p: &str, des_p: &str, mid_p: &str) {
         hanoi(height - 1, mid_p, des_p, src_p);
     }
 }
+
+pub fn nums_sum3(sum: i32, nums: &[i32]) -> i32 {
+    if nums.len() == 1 {
+        sum + nums[0]
+    } else {
+        nums_sum3(sum + nums[0], &nums[1..])
+    }
+}
+
+pub fn nums_sum4(sum: i32, nums: &[i32]) -> i32 {
+    if nums.len() == 1 {
+        sum + nums[0]
+    } else {
+        nums_sum4(sum + nums[nums.len() - 1], &nums[..nums.len() - 1])
+    }
+}
